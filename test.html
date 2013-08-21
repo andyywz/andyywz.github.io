@@ -1,0 +1,165 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Andy Yong</title>
+  
+<style>
+
+/* --- RESET --- */
+
+html, body, header, strong, h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* --- ELEMENTS --- */
+
+body {
+  /*font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400;*/
+  color: white;
+  font-size: 16px;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(33, 133, 89, 1);
+}
+
+a:visited {
+  color: rgba(33, 133, 89, 1);
+}
+
+strong {
+  font-weight: 800;
+}
+
+a > strong {
+  font-weight: 700;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* --- UTILITIES --- */
+
+.group:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.hide {
+	display: none;
+}
+
+/* --- HEADER --- */
+
+.header {
+  float: right;
+  text-align: right;
+  padding: 20px 70px;
+}
+
+.name {
+  margin: 10px 0;
+}
+
+.fname, .lname {
+  color: yellow;
+}
+
+.slash {
+  color: white;
+}
+
+.profession {
+  margin: 5px;
+}
+
+.location {
+  margin: 5px;
+}
+
+/* --- NAVBAR --- */
+
+.navbar {
+  text-align: right;
+}
+
+.navbar > ul {
+  float: left;
+  width: 100%;
+  height: auto;
+  background: yellow;
+}
+
+.navbar > ul > li {
+  float: right;
+}
+
+.navbar > ul > li > a {
+  padding: 10px 20px;
+  display: block;
+}
+
+/* --- CONTENT --- */
+
+.content {
+  padding: 100px 100px;
+  float: right;
+}
+
+.content > h3 {
+  text-align: right;
+}
+
+.content > h3 > strong {
+  font-size: 18px;
+  color: orange;
+}
+
+</style>
+</head>
+
+<body>
+  
+  <header class="header">
+    <h1 class="name">
+      <strong class="fname">ANDY</strong>
+      <strong class="slash">/</strong>
+      <strong class="lname">YONG</strong>
+    </h1>
+    
+    <h3 class="profession">Web App Developer</h3>
+    
+    <h3 class="location">New York, NY</h3>
+  </header>
+  
+  <nav class="navbar group">
+    <ul class="group">
+      <li><a href="#">&lt / home &gt</a></li>
+      <li><a href="#">&lt stuff i've built &gt</a></li>
+      <li><a href="#">&lt how to contact me &gt</a></li>
+    </ul>
+  </nav>
+  
+  <div class="content group">
+    
+    <h3>I MAKE COOL STUFF</h3>
+    <h3>WITH <strong>RUBY ON RAILS</strong></h3>
+    <h3>AND <strong>HTML5, CSS3,</strong></h3>
+    <h3><strong>JAVASCRIPT, JQUERY, BACKBONE.JS,</strong></h3>
+    <h3><strong>SQL, PYTHON & RSPEC</strong></h3>
+    
+  </div>
+  
+</body>
+</html>
+
