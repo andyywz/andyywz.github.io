@@ -16,7 +16,7 @@ body {
   color: rgba(251, 251, 249, 1);
   font-size: 25px;
   background: black;
-  background-image: url('./portfolio_home_background');
+  background-image: url('../images/portfolio_home_background');
   background-repeat: no-repeat;
 }
 
@@ -141,7 +141,7 @@ a.yellow {
 }
 
 .hometext {
-  background: url('portfolio_home_text.png') no-repeat;
+  background: url('../images/portfolio_home_text.png') no-repeat;
   width: 854px;
   height: 285px;
 }
@@ -243,7 +243,7 @@ a.yellow {
   }
 
   .hometext {
-    background: url('portfolio_home_text_small.png') no-repeat;
+    background: url('../images/portfolio_home_text_small.png') no-repeat;
     width: 550px;
     height: 185px;
   }
