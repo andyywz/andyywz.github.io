@@ -168,7 +168,7 @@ a.yellow {
 .contact-wrap {
   position: absolute;
   left: 50%;
-  top: 146px;
+  top: 102px;
   margin-left: -425px;
   width: 850px;
   height: 160px;
@@ -178,7 +178,8 @@ a.yellow {
 }
 
 .contact-info {
-  position: absolute;
+/*  position: absolute;
   top: 40px;
-  left: 200px;
+  left: 200px;*/
+  margin: 40px 0 0 210px;
 }

@@ -21,14 +21,14 @@
         <strong class="yellow">YONG</strong>
       </h1>
     
-      <h3 class="profession">Web Developer</h3>
+      <h3 class="profession">Web Developer | Software Engineer</h3>
       <h3 class="git"><a href="http://www.github.com/andyywz">github.com/andyywz</a></h3>
       <h3 class="location">New York, NY</h3>
     </header>
   <div>
     
   <div class="content">
-    <div class="animated contact-wrap hide">
+    <div class="moving-wraps contact-wrap hide">
       <div class="contact-info">
         <h3 class="email">&ltemail&gt 
           <a href="mailto:andyywz@gmail.com">andyywz@gmail.com</a>
@@ -39,7 +39,7 @@
       </div>
     </div>
     
-    <div class="animated projects-wrap hide">
+    <div class="moving-wraps projects-wrap hide">
       <article class="project-info">
         <h3 class="title">
           <a href="http://weekly-lindy.herokuapp.com">
@@ -79,13 +79,13 @@
             &ltHTML canvas&gt
           </h3>
           <h3>
-            &ltJavaScript Front End&gt
+            &ltJavaScript Front End and Back End&gt
           </h3>
         </div>
       </article>
     </div>
     
-    <div class="animated home-wrap hide">
+    <div class="moving-wraps home-wrap hide">
       <figure class="hometext"></figure>
     </div>
   </div>
@@ -95,6 +95,8 @@
 
 <script>
 $(document).ready(function () {
+  $(".header").addClass("animated fadeInDownBig");
+  
   $(".home-wrap").fadeToggle("fast");
   
   $(".button").on("click", function (event) {
@@ -108,28 +110,10 @@ $(document).ready(function () {
       
       var buttonClass = $(event.target).parent().attr("class");
 
-      $(".content > div.animated." + oldButtonClass + "-wrap").fadeToggle("fast");
+      $(".content > div.moving-wraps." + oldButtonClass + "-wrap").fadeToggle("fast");
       
       $("." + buttonClass + "-wrap").fadeToggle("fast");
     };
   });
 });
-
-// $(document).ready(function () {
-//   $(".home-wrap").removeClass("hide").addClass("fadeInLeftBig");
-//   
-//   $(".button").on("click", function (event) {
-//     if ($(event.target).hasClass("yellow")) {
-//       
-//     } else {
-//       $(".button").removeClass("yellow");
-//       $(event.target).addClass("yellow");
-//       var buttonClass = $(event.target).parent().attr("class");
-//       
-//       $(".content > div.animated").addClass("fadeOutRightBig");
-//       
-//       $("." + buttonClass + "-wrap").removeClass("hide").addClass("fadeInLeftBig");
-//     }
-//   });
-// });
 </script>
