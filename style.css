@@ -1,6 +1,6 @@
 /* --- RESET --- */
 
-html, body, header, section, article, div, strong, a, img, p, h1, ul, li {
+html, body, header, strong, h1, h2, h3, ul, li {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,27 +12,41 @@ html, body, header, section, article, div, strong, a, img, p, h1, ul, li {
 /* --- ELEMENTS --- */
 
 body {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  background: black
+  font-family: 'Source Code Pro', sans-serif;
+  color: rgba(251, 251, 249, 1);
+  font-size: 25px;
+  background: black;
+  background-image: url('./portfolio_home_background');
+  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
-  color: rgba(33, 133, 89, 1)
+  color: rgba(251, 251, 249, 0.7);
 }
 
 a:visited {
-  color: rgba(33, 133, 89, 1)
+  color: rgba(251, 251, 249, 0.7);
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 strong {
-  font-weight: 800;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-a > strong {
-  font-weight: 700;
+ul, li {
+  list-style: none;
+}
+
+a.yellow {
+  color: rgba(250, 211, 50, 0.7);
+}
+
+.yellow {
+  color: rgba(250, 211, 50, 1);
 }
 
 /* --- UTILITIES --- */
@@ -49,192 +63,122 @@ a > strong {
 
 /* --- HEADER --- */
 
+.header-wrap {
+  width: 100%;
+}
+
 .header {
-	background: rgba(26, 172, 203, 0.6);
-	width: 106px;
-  height: 100%;
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	font-size: 14px;
-  z-index: 10;
-  position: fixed;
+  float: right;
+  text-align: right;
+  padding: 20px 60px 0 0;
 }
 
-.header-nav {
-  padding-top: 20px;
+/* contact (180, 110) */
+/* projects (298, 28) */
+/* home (450, 175) */
+
+.contact {
+  position: absolute;
+  left: 102px;
+  top: 75px;
+  text-align: center;
 }
 
-.header-logo {
+.projects {
+  position: absolute;
+  left: 298px;
+  top: 25px;
+  text-align: center;
 }
 
-.header-logo > a {
-  padding: 10px 20px;
-  margin: auto;
-  margin-bottom: 20px;
-  display: block;
-  color: rgba(255, 255, 255, 1);
-  font-weight: bold;
-  -webkit-transition: 0.5s all;
+.home {
+  position: absolute;
+  left: 418px;
+  top: 162px;
+  text-align: center;
 }
 
-.header-logo > a:visited {
-  color: white;
+.name {
+  font-size: 55px;
 }
 
-.header-logo > a:hover {
-  background: rgba(208, 198, 177, 0.9);
-  color: rgba(33, 133, 89, 1);
+.profession {
+  margin: 5px;
 }
 
-.header-nav > ul > li > a {
-	padding: 10px 10px 10px 10px;
-	display: block;
-  color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: 0.5s all;
+.git {
+  margin: 5px;
 }
 
-.header-nav > ul > li:nth-child(2) > a {
-  border-left: 5px solid rgba(221, 30, 47, 1); 
+.git > a {
+  color: rgba(251, 251, 249, 1);
 }
 
-.header-nav > ul > li:nth-child(2) > a:hover {
-  color: rgba(255, 255, 255, 1);
-  background: rgba(221, 30, 47, 0.7);
-}
-
-.header-nav > ul > li:nth-child(3) > a {
-  border-left: 5px solid rgba(235, 176, 53, 1);
-}
-
-.header-nav > ul > li:nth-child(3) > a:hover {
-  color: rgba(255, 255, 255, 1);
-  background: rgba(235, 176, 53, 0.7);
+.location {
+  margin: 5px;
 }
 
 /* --- CONTENT --- */
 
-.main {
-  padding: 100px;
-  padding-left: 120px;
-}
-
 .content {
-	width: 650px;
-	margin: auto;
-	padding: 15px 20px;
-  background: rgba(208, 198, 177, 1); 
-  color: rgba(25, 40, 35, 1);
-	border: 2px ridge lightgray;
-	border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 214px;
 }
 
-.content-main {
-	float: left;
-	padding: 20px;
-  width: 610px;
+.home-wrap {
+  position: absolute;
+  left: 50%;
+  top: 31px;
+  margin-left: -427px;
 }
 
-.content-header {
-	border-bottom: 1px solid #ccc;
+.hometext {
+  background: url('portfolio_home_text.png') no-repeat;
+  width: 854px;
+  height: 285px;
 }
 
-.content-header > h1 {
-  float: right;
-	font-size: 48px;
-	font-weight: bold;
-	padding-bottom: 20px;
+.projects-wrap {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  margin-left: -425px;
+  width: 850px;
+  height: auto;
+  background: rgba(84, 84, 84, 0.5);
+  border: 1px;
+  border-radius: 7px;
 }
 
-.content-header > .profile-info {
-  float: right;
+.project-info {
+  font-size: 20px;
+  margin: 20px 50px;
 }
 
-.content-header > .profile-info > p {
-  text-align: right;
+.project-info > .title {
+  font-size: 22px;
 }
 
-/* --- PICTURE --- */
-
-.profile-picture {
-	padding: 0 20px 20px 20px;
-	width: 200px;
-  float: left;
+.project-info > .descriptions {
+  margin: 8px 22px;
 }
 
-.profile-picture > a {
-	border: 5px solid rgba(82, 117, 120, 1);
-	display: block;
+.contact-wrap {
+  position: absolute;
+  left: 50%;
+  top: 146px;
+  margin-left: -425px;
+  width: 850px;
+  height: 160px;
+  background: rgba(84, 84, 84, 0.5);
+  border: 1px;
+  border-radius: 7px;
 }
 
-.profile-picture > a > img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-/* --- ITEMS --- */
-.items {
-  margin-top: 20px;
-}
-
-.summary p {
-  margin: 10px 0;
-}
-
-.projects > ul {
-  list-style: none;
-  padding: 5px;
-}
-
-.inner-list {
-  padding-left: 30px;
-}
-
-/* --- CONTACT ---*/
-
-.lightbox {
-	width: 650px;
-	height: auto;
-  min-height: 100px;
-	position: fixed;
-	top: 250px;
-	left: 50%;
-	margin-left: -325px;
-	background: rgba(208, 198, 177, 1);
-	border-radius: 15px;
-	box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
-  z-index: 12;
-}
-
-.shadowbox {
-	background: rgba(0, 0, 0, 0.6);
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-  z-index: 11;
-}
-
-.contact-container {
-	padding: 30px;
-}
-
-.contact-container > h1 {
-	padding: 0px;
-	font-family: "Courier New", Courier;
-	font-weight: bold;
-	font-size: 50px;
-	text-transform: uppercase;
-	text-shadow: 1px 3px 3px rgba(173, 166, 146, 1);
-	color: rgba(34,34,34,1);
-	margin-bottom: 10px;
-}
-
-.contact-content {
-	font-size: 14px;
-	font-family: sans-serif;
-}
-
-.contact-content > p {
-	margin: 15px 0;
+.contact-info {
+  position: absolute;
+  top: 40px;
+  left: 200px;
 }

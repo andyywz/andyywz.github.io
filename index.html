@@ -1,117 +1,132 @@
 <!DOCTYPE>
 <html>
 <head>
-  <title>Andy Yong's Portfolio</title>
+  <title>Andy Yong</title>
   <link rel="stylesheet" href="style.css" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800,700,400,300,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="animate-custom.css" type="text/css">
+  <script src="jquery-1.9.1.js" type="text/javascript"></script>
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300|Archivo+Black' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-  <header class="header">
-      
-      <nav class="header-nav">
-        <ul class="group">
-          <li>
-            <h1 class="header-logo">
-              <a href="#">andyywz</a>
-            </h1>
-          </li>
-          <li><a href="#">Summary</a></li>
-          <!-- <li><a href="#">Projects</a></li> -->
-          <li><a class="contact-button" href="#">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="header-wrap group">
+    <h3 class="contact"><a class="button" href="#">how to<br>contact me</a></h3>
+    <h3 class="projects"><a class="button" href="#">stuff i've<br>built</a></h3>
+    <h3 class="home"><a class="button yellow" href="#">home</a></h3>
     
-  </header>
-  
-  <div class="main">
-  
-    <div class="content group">
+    <header class="header">
+      <h1 class="name">
+        <strong class="yellow">ANDY</strong>
+        <strong>/</strong>
+        <strong class="yellow">YONG</strong>
+      </h1>
     
-      <section class="content-main">
-        <header class="content-header group">
-          <div class="profile-picture">
-            <a href="http://www.github.com/andyywz">
-              <img src="Profile.jpg" width="200" height="267" alt="">
-            </a>
-          </div>
-          
-          <h1>Andy Yong</h1>
-          
-          <div class="profile-info">
-            <p>New York, NY</p>
-            <p><a href="http://www.github.com/andyywz">github.com/andyywz</a>
-            </p>
-          </div>
-          
-        </header>
-      
-        <div class="items">
-        
-          <article class="summary">
-      
-            <div class="summary-text">
-              
-              <p>
-                I am a Web Developer that specializes in <strong>Ruby on Rails</strong>
-              </p>
-              
-              <h1>I also know...</h1>
-            
-              <p>
-                HTML 5, CSS, Javascript, JQuery, SQL, Backbone.js, Python, RSpec, Git and more...
-              </p>
-              
-            </div>
-          </article>
-        
-          <article class="projects">
-            <header><strong>Projects:</strong></header>
-          
-            <ul>
-              <li>
-                <a href="http://weekly-lindy.herokuapp.com">
-                  <strong>Weekly-Lindy</strong>
-                </a>
-                <em>(Guest login: test, password: test)</em>
-                <ul class="inner-list">
-                  <li>Events Manager for local swing dancers in NYC</li>
-                  <li>Shows local events in the next week</li>
-                  <li>AJAX attend and unattend functionality</li>
-                </ul>
-              </li>
-              
-              <li>
-                <a href="/asteroids">
-                  <strong>Asteroids</strong>
-                </a>
-                <ul class="inner-list">
-                  <li>Traditional Asteroids game</li>
-                  <li>HTML Canvas</li>
-                  <li>JavaScript Frontend</li>
-                  <li>(Shoot: Spacebar, Movement: Arrow keys)</li>
-                </ul>
-              </li>
-            </ul>
-          </article>
-        </div>
-      
-      </section>
-    </div>
-  
-	  <div class="shadowbox hide"></div>
-	  <div class="lightbox hide">
-    <article class="contact-container hide">
-      <h1>Andy Yong</h1>
-      <div class="contact-content">
-        <p>[email] andyywz@gmail.com</p>
+      <h3 class="profession">Web Developer</h3>
+      <h3 class="git"><a href="http://www.github.com/andyywz">github.com/andyywz</a></h3>
+      <h3 class="location">New York, NY</h3>
+    </header>
+  <div>
+    
+  <div class="content">
+    <div class="animated contact-wrap hide">
+      <div class="contact-info">
+        <h3 class="email">&ltemail&gt 
+          <a href="mailto:andyywz@gmail.com">andyywz@gmail.com</a>
+        </h3>
+        <h3 class="linkedin">
+          &ltconnect with me&gt <a href="http://www.linkedin.com/in/andyywz">linked-in</a>
+        </h3>
       </div>
-    </article>
-	</div>
-  
+    </div>
+    
+    <div class="animated projects-wrap hide">
+      <article class="project-info">
+        <h3 class="title">
+          <a href="http://weekly-lindy.herokuapp.com">
+            <strong class="yellow">WEEKLY</strong>
+            <strong>-</strong>
+            <strong class="yellow">LINDY</strong>
+          </a>
+          (guest login: test; password: test;)
+        </h3>
+        
+        <div class="descriptions">
+          <h3>
+            &ltevents manager tool for local swing dancers in NYC&gt
+          </h3>
+          <h3>
+            &ltshows local events for the coming week&gt
+          </h3>
+          <h3>
+            &ltAJAX attend and unattend functionality&gt
+          </h3>
+        </div>
+      </article>
+
+      <article class="project-info">
+        <h3 class="title">
+          <a href="/asteroids">
+            <strong class="yellow">ASTEROIDS</strong>
+          </a>
+          (to shoot: spacebar; to move: arrow keys;)
+        </h3>
+        <div class="descriptions">
+      
+          <h3>
+            &lttraditional asteroids game&gt
+          </h3>
+          <h3>
+            &ltHTML canvas&gt
+          </h3>
+          <h3>
+            &ltJavaScript Front End&gt
+          </h3>
+        </div>
+      </article>
+    </div>
+    
+    <div class="animated home-wrap hide">
+      <figure class="hometext"></figure>
+    </div>
   </div>
   
-  <script src="jquery.js" type="text/javascript"></script>
-  <script src="main.js" type="text/javascript"></script>
 </body>
 </html>
 
+<script>
+$(document).ready(function () {
+  $(".home-wrap").fadeToggle();
+  
+  $(".button").on("click", function (event) {
+    if ($(event.target).hasClass("yellow")) {
+      
+    } else {
+      $(".button").removeClass("yellow");
+      $(event.target).addClass("yellow");
+      var buttonClass = $(event.target).parent().attr("class");
+      
+      $(".content > div.animated:visible").fadeToggle();
+      
+      $("." + buttonClass + "-wrap").fadeToggle();
+    };
+  });
+});
+
+// $(document).ready(function () {
+//   $(".home-wrap").removeClass("hide").addClass("fadeInLeftBig");
+//   
+//   $(".button").on("click", function (event) {
+//     if ($(event.target).hasClass("yellow")) {
+//       
+//     } else {
+//       $(".button").removeClass("yellow");
+//       $(event.target).addClass("yellow");
+//       var buttonClass = $(event.target).parent().attr("class");
+//       
+//       $(".content > div.animated").addClass("fadeOutRightBig");
+//       
+//       $("." + buttonClass + "-wrap").removeClass("hide").addClass("fadeInLeftBig");
+//     }
+//   });
+// });
+</script>
