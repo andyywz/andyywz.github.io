@@ -1,6 +1,6 @@
 /* --- RESET --- */
 
-html, body, header, strong, h1, h2, h3, ul, li {
+html, body, header, strong, h1, h2, h3, h4, ul, li {
   margin: 0;
   padding: 0;
   border: 0;
@@ -121,13 +121,16 @@ a.yellow {
   margin: 5px;
 }
 
+.navbar {
+  display: none;
+}
+
 /* --- CONTENT --- */
 
 .content {
   position: relative;
   width: 100%;
   height: auto;
-  top: 214px;
 }
 
 .home-wrap {
@@ -181,8 +184,110 @@ a.yellow {
 }
 
 .contact-info {
-/*  position: absolute;
-  top: 40px;
-  left: 200px;*/
   margin: 40px 0 0 210px;
+}
+
+
+@media screen and (max-width: 1000px){
+  body {
+    font-size: 20px;
+  }
+  
+  .name {
+    font-size: 41px;
+  }
+  
+  a {
+    color: rgba(251, 251, 249, 1);
+  }
+  
+  a.yellow {
+    color: rgba(250, 211, 50, 1);
+  }
+
+  .yellow {
+    color: rgba(250, 211, 50, 1);
+  }
+  
+  .header {
+    float: none;
+    padding: 20px 20px 0 20px;
+  }
+  
+  .links {
+    display: none;
+  }
+  
+  .navbar {
+    display: block;
+  }
+  
+  .navbar > h4 {
+    position: static;
+    float: right;
+    padding-left: 20px;
+  }
+  
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 10px;
+  }
+
+  .home-wrap {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -275px;
+  }
+
+  .hometext {
+    background: url('portfolio_home_text_small.png') no-repeat;
+    width: 550px;
+    height: 185px;
+  }
+
+  .projects-wrap {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    margin-left: -275px;
+    width: 550px;
+    height: auto;
+    background: rgba(84, 84, 84, 0.5);
+    border: 1px;
+    border-radius: 7px;
+  }
+
+  .project-info {
+    font-size: 13px;
+    margin: 20px 35px;
+  }
+
+  .project-info > .title {
+    font-size: 14px;
+  }
+
+  .project-info > .descriptions {
+    margin: 8px 15px;
+  }
+
+  .contact-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -275px;
+    width: 550px;
+    height: auto;
+    background: rgba(84, 84, 84, 0.5);
+    border: 1px;
+    border-radius: 7px;
+  }
+
+  .contact-info {
+    margin: 20px 0 20px 140px;
+    font-size: 16px;
+  }
+
 }
