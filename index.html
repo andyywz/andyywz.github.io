@@ -101,11 +101,14 @@ $(document).ready(function () {
     if ($(event.target).hasClass("yellow")) {
       
     } else {
-      $(".button").removeClass("yellow");
-      $(event.target).addClass("yellow");
-      var buttonClass = $(event.target).parent().attr("class");
+      var oldButtonClass = $(".button.yellow").parent().attr("class");
       
-      $(".content > div.animated:visible").fadeToggle();
+      $(".button").removeClass("yellow");
+      $(event.target).addClass("yellow");      
+      
+      var buttonClass = $(event.target).parent().attr("class");
+
+      $(".content > div.animated." + oldButtonClass + "-wrap").fadeToggle();
       
       $("." + buttonClass + "-wrap").fadeToggle();
     };
