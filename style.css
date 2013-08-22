@@ -49,10 +49,6 @@ a.yellow {
   color: rgba(250, 211, 50, 1);
 }
 
-.button {
-  z-index: 10;
-}
-
 /* --- UTILITIES --- */
 
 .group:after {
@@ -86,6 +82,7 @@ a.yellow {
   left: 102px;
   top: 75px;
   text-align: center;
+  z-index: 10;
 }
 
 .projects {
@@ -93,6 +90,7 @@ a.yellow {
   left: 298px;
   top: 25px;
   text-align: center;
+  z-index: 10;
 }
 
 .home {
@@ -100,6 +98,7 @@ a.yellow {
   left: 418px;
   top: 162px;
   text-align: center;
+  z-index: 10;
 }
 
 .name {
