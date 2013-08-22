@@ -95,7 +95,7 @@
 
 <script>
 $(document).ready(function () {
-  $(".home-wrap").fadeToggle();
+  $(".home-wrap").slideToggle();
   
   $(".button").on("click", function (event) {
     if ($(event.target).hasClass("yellow")) {
@@ -108,9 +108,9 @@ $(document).ready(function () {
       
       var buttonClass = $(event.target).parent().attr("class");
 
-      $(".content > div.animated." + oldButtonClass + "-wrap").fadeToggle();
+      $(".content > div.animated." + oldButtonClass + "-wrap").slideToggle();
       
-      $("." + buttonClass + "-wrap").fadeToggle();
+      $("." + buttonClass + "-wrap").slideToggle();
     };
   });
 });
