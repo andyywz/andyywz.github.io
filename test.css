@@ -102,14 +102,6 @@ a.yellow {
   font-size: 55px;
 }
 
-.fname, .lname {
-  color: rgba(250, 211, 50, 1);
-}
-
-.slash {
-  color: white;
-}
-
 .profession {
   margin: 5px;
 }
@@ -151,31 +143,49 @@ a.yellow {
 .projects-wrap {
   position: absolute;
   left: 50%;
-  top: 146px;
-  margin-left: -400px;
-  width: 800px;
+  top: 35px;
+  margin-left: -425px;
+}
+
+.projects-container {
+  position: absolute;
+  left: 50%;
+  width: 850px;
   height: 160px;
   background: rgba(84, 84, 84, 0.5);
   border: 1px;
   border-radius: 7px;
 }
 
+.projects-container:first-child {
+  top: 15px;
+}
+
+.projects-container:last-child {
+  top: 200px;
+}
+
 .project-info {
   position: absolute;
-  top: 40px;
-  left: 200px;
+  top: 20px;
+  left: 35px;
+  font-size: 20px;
 }
 
 .project-info > .title {
   font-size: 22px;
 }
 
+.project-info > .descriptions {
+  margin: 8px 22px;
+}
+
 .contact-wrap {
   position: absolute;
   left: 50%;
   top: 146px;
-  margin-left: -400px;
-  width: 800px;
+  margin-left: -425px;
+  width: 850px;
   height: 160px;
   background: rgba(84, 84, 84, 0.5);
   border: 1px;
