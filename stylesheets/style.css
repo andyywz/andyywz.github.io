@@ -16,7 +16,7 @@ body {
   color: rgba(251, 251, 249, 1);
   font-size: 25px;
   background: black;
-  background-image: url('../images/portfolio_home_background');
+  background-image: url('../images/portfolio_home_background.png');
   background-repeat: no-repeat;
 }
 
