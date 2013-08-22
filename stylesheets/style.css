@@ -109,6 +109,14 @@ a.yellow {
   margin: 5px;
 }
 
+.resume {
+  margin: 5px;
+}
+
+.resume > a {
+  color: rgba(251, 251, 249, 1);
+}
+
 .git {
   margin: 5px;
 }
