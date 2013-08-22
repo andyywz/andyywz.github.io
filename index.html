@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="animate-custom.css" type="text/css">
   <script src="jquery-1.9.1.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script>
+  
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300|Archivo+Black' rel='stylesheet' type='text/css'>
 </head>
 
@@ -104,24 +106,6 @@
 <script>
 $(document).ready(function () {
   $(".header").addClass("animated fadeInDownBig");
-  
-  $(".home-wrap").fadeToggle("fast");
-  
-  $(".button").on("click", function (event) {
-    if ($(event.target).hasClass("yellow")) {
-      
-    } else {
-      var oldButtonClass = $(".button.yellow").parent().attr("class");
-      
-      $(".button").removeClass("yellow");
-      $(event.target).addClass("yellow");      
-      
-      var buttonClass = $(event.target).parent().attr("class");
-
-      $(".content > div.moving-wraps." + oldButtonClass + "-wrap").fadeToggle("fast");
-      
-      $("." + buttonClass + "-wrap").fadeToggle("fast");
-    };
-  });
+  listeners();
 });
 </script>
