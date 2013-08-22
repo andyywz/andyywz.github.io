@@ -49,6 +49,10 @@ a.yellow {
   color: rgba(250, 211, 50, 1);
 }
 
+.button {
+  z-index: 10;
+}
+
 /* --- UTILITIES --- */
 
 .group:after {
