@@ -1,0 +1,68 @@
+html, body, div, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+	vertical-align: baseline;
+	font-family: sans-serif;
+}
+.container {
+	width: 400px;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid gray;
+	border-radius: 15px;
+	background: beige;
+}
+h1 {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+#enable_form {
+  width: 300px;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#enable_form label {
+  font-size: 15px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#enable_form .text_field {
+  font-size: 15px;
+  width: 196px;
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#enable_form .submit_btn {
+  font-family: inherit;
+  font-size: 13px;
+  width: 100%;
+  padding: 5px 17px;
+  margin: 10px 0;
+  background: rgba(124, 218, 124, 1);
+  border: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#enable_form .submit_btn:disabled {
+  background: rgba(255, 99, 71, 0.6);
+}
+#enable_form .submit_btn:hover:enabled {
+  opacity: 0.7;
+}
